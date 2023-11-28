@@ -6,7 +6,7 @@ import Login from './Components/Login';
 import Banner from './Components/Banner';
 import List from './Components/List';
 import { BrowserRouter as Router, Routes,Route} from 'react-router-dom';
-import{Originals,ComedyMovies,TrendingNow,TVshow} from'./Components/urls'
+import{Originals,ComedyMovies,TrendingNow,TVshow ,horror,documenteries } from'./Components/urls'
 function App() {
   return (
     <React.Fragment>
@@ -38,9 +38,9 @@ function App() {
         <List url={TrendingNow} title="Netflix Originals" param="originals"/>
               <List url={Originals} title="Trending Now" param="trending"/>
               <List url={ComedyMovies} title="Now Playing" param="now_playing"/>
-              <List url={TVshow} title="Top Rated" param="top_rated"/>
-              <List  title="Popular" param="popular"/>
-              <List title="Upcoming" param="upcoming"/>
+              <List url={TVshow} title="Tv Series" param="top_rated"/>
+              <List url={horror} title="Horror" param="popular"/>
+              <List url={documenteries } title="Romance " param="romance"/>
         </React.Fragment>
       } />
     </Routes>
