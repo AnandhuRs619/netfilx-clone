@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { imageUrl,API_KEY,URL } from '../Api/Api'
-import YouTube from 'react-youtube';
+
 import Modal from './modal';
 import axios from '../Api/axios';
 
@@ -15,7 +15,7 @@ const List = ({title,param,url}) => {
     }).catch(error=>{
       // alert("Network error")
     })
-  },[])
+  },[url])
   
   
 
